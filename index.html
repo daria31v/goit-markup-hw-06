@@ -567,6 +567,42 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <!-- FORM-MODAL-ORDER -->
+        <h5 class="modal-title">Залиште свої дані, ми вам передзвонимо</h5>
+        <form class="form-modal-order" name="modal-order" autocomplete="on" novalidate>
+          <label class="input-order">
+            <span class="input-form">Ім'я</span>
+            <input class="input-item" type="text" name="username" />
+            <svg><use></use></svg>
+          </label>
+          <label class="input-order">
+            <span class="input-form">Телефон</span>
+            <input class="input-item" type="tel" name="user-phone" />
+            <svg><use></use></svg>
+          </label>
+          <label class="input-order">
+            <span class="input-form">Пошта</span>
+            <input class="input-item" type="email" name="email" />
+            <svg><use></use></svg>
+          </label>
+          <label class="input-order">
+            <span class="input-form comment">Коментар</span>
+            <input
+              class="input-item comment-text"
+              type="text"
+              name="comment"
+              placeholder="Введіть текст"
+            />
+          </label>
+          <label class="">
+            <input class="" type="checkbox" name="contract_terms" />
+            <span class="input-form">Погоджуюся з розсилкою та приймаю</span>
+            <a class="list-link terms" href="" target="_blank" rel="noopener noreferrer"
+              >Умови договору</a
+            >
+          </label>
+          <button class="btn-submite" type="submite">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
