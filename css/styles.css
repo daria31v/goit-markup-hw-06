@@ -5,13 +5,14 @@
   --footer-bgr-color: #2f303a;
   --hero-bgr-color: #c4c4c4;
   --accent-bgr-btn-color: rgba(33, 150, 243, 1);
+  --hover-focus-btn: rgba(24, 140, 232, 1);
   --white-color: #ffffff;
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --footer-title: rgba(255, 255, 255, 1);
   --bgr-button-secondary: #f5f4fa;
   --bgr-overlay-we: rgba(47, 48, 58, 0.8);
   --main-text: rgba(117, 117, 117, 1);
-  --hover-focus-btn: #188ce8;
+
   --border-btn: #eeeeee;
   --icon-color: #afb1b8;
   --icon-border-color: rgba(175, 177, 184, 1);
@@ -723,16 +724,17 @@ div {
   height: 30px;
   padding: 0 0;
   cursor: pointer;
+  transition: fill var(--transition);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  fill: var(--accent-bgr-btn-color);
 }
 /* FORMA */
 .form-modal-order {
   text-align: center;
 }
 /* FORM!!!!!!!!!!!!!!! start */
-.group {
-  margin-top: 12px;
-  margin-bottom: 20px;
-}
 .modal-title {
   display: flex;
   align-items: center;
@@ -742,6 +744,10 @@ div {
   line-height: 23px;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+}
+.group {
+  margin-top: 12px;
+  margin-bottom: 20px;
 }
 .input-order {
   display: block;
@@ -824,8 +830,6 @@ div {
   transition: opacity var(--transition);
   fill: var(--accent-bgr-btn-color);
 }
-.checkbox-uncheck {
-}
 
 .checkbox-text {
   font-weight: 400;
@@ -841,7 +845,6 @@ div {
   color: var(--accent-bgr-btn-color);
   text-underline-position: under;
 }
-/* FORM!!!!!!!!!!!!!!! end */
 
 .btn-submite {
   cursor: pointer;
@@ -859,4 +862,10 @@ div {
   align-items: center;
   justify-content: center;
   letter-spacing: 0.06em;
+  transition: background-color var(--transition);
 }
+.btn-submite:hover,
+.btn-submite:focus {
+  background-color: var(--hover-focus-btn);
+}
+/* FORM!!!!!!!!!!!!!!! end */
