@@ -782,11 +782,26 @@ div {
   letter-spacing: 0.01em;
   color: var(--font-form-modal);
 }
+.input-item {
+  transition: border var(--transition);
+}
+.input-item:hover,
+.input-item:focus {
+  border: 1px solid var(--accent-bgr-btn-color);
+}
+.input-item:hover + .input-icon,
+.input-item:focus + .input-icon {
+  fill: var(--accent-bgr-btn-color);
+}
+.input-item + .input-icon {
+  transition: fill var(--transition);
+}
 
 .input-icon {
   position: absolute;
   bottom: 11px;
   left: 12px;
+  transition: fill var(--transition);
 }
 .order {
   display: flex;
@@ -794,6 +809,7 @@ div {
   justify-content: center;
   margin-bottom: 30px;
   gap: 7px;
+  height: 24px;
 }
 .order-input:checked + .checkbox-icon .checkbox-uncheck {
   opacity: 0;
@@ -802,24 +818,28 @@ div {
 .order-input:checked + .checkbox-icon .checkbox-check {
   opacity: 1;
 }
-.checkbox-icon {
-}
-.checkbox-uncheck {
-}
+
 .checkbox-check {
   opacity: 0;
   transition: opacity var(--transition);
+  fill: var(--accent-bgr-btn-color);
 }
+.checkbox-uncheck {
+}
+
 .checkbox-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text);
+  user-select: none;
+  text-underline-position: under;
 }
-.terms {
+.terms-link {
   text-decoration: underline;
   color: var(--accent-bgr-btn-color);
+  text-underline-position: under;
 }
 /* FORM!!!!!!!!!!!!!!! end */
 
