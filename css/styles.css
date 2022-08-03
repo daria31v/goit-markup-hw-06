@@ -696,7 +696,7 @@ div {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  min-height: 581px;
+  height: 581px;
   padding: 40px 40px;
   background-color: var(--white-color);
   border-radius: 4px;
@@ -816,6 +816,11 @@ div {
   gap: 7px;
   height: 24px;
 }
+.checkbox-icon:hover,
+.checkbox-icon:focus {
+  fill: var(--accent-bgr-btn-color);
+  cursor: pointer;
+}
 .order-input:checked + .checkbox-icon .checkbox-uncheck {
   opacity: 0;
   transition: opacity var(--transition);
@@ -823,18 +828,12 @@ div {
 .order-input:checked + .checkbox-icon .checkbox-check {
   opacity: 1;
 }
-
+.checkbox-icon {
+  transition: fill var(--transition);
+}
 .checkbox-check {
   opacity: 0;
   transition: opacity var(--transition);
-  fill: var(--accent-bgr-btn-color);
-}
-.checkbox-uncheck {
-  transition: fill var(--transition);
-}
-.checkbox-uncheck:hover,
-.checkbox-uncheck:focus {
-  fill: var(--accent-bgr-btn-color);
 }
 
 .checkbox-text {
