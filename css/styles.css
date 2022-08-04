@@ -816,7 +816,7 @@ div {
   height: 24px;
 }
 .order-input:focus + .checkbox-icon {
-  stroke: var(--primery-text-color);
+  stroke: var(--accent-bgr-btn-color);
   stroke-width: 3px;
 }
 .order-input:checked + .checkbox-icon .checkbox-uncheck {
